@@ -44,9 +44,6 @@ jobs:
         with:
           path: .output/public
 
-      - name: Install tar
-        run: apk add --no-cache tar
-
   deploy:
     environment:
       name: github-pages
