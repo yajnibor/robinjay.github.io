@@ -36,8 +36,8 @@ jobs:
       - name: Generate static site
         run: yarn generate
 
-      - name: Check output exists
-        run: ls -la .output/public
+      - name: Install GNU tar
+        run: apk add --no-cache gnu-tar
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
