@@ -194,7 +194,7 @@ body {
   color: #2563eb;
 }
 
-. project-link {
+.project-link {
   display: inline-block;
   margin-top: 1rem;
   color: #2563eb;
@@ -213,7 +213,7 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-  . hero-title {
+  .hero-title {
     font-size: 2. 5rem;
   }
   
