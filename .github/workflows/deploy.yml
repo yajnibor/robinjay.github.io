@@ -36,10 +36,16 @@ jobs:
       - name: Generate static site
         run: yarn generate
 
+      - name: Check output exists
+        run: ls -la .output/public
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .output/public
+
+      - name: Install tar
+        run: apk add --no-cache tar
 
   deploy:
     environment:
